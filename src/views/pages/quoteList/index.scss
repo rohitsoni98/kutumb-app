@@ -1,0 +1,56 @@
+.quotes_container {
+  .quotes_table_container {
+    padding: 0 16px;
+    overflow: scroll;
+    height: calc(100vh - 182px);
+
+    .table_mui {
+      white-space: nowrap;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+        rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+
+      .position_sticky {
+        right: 0;
+        position: sticky;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+      }
+
+      .action_cell {
+        width: 117px !important;
+        min-width: 117px !important;
+      }
+
+      .pagination {
+        bottom: 0;
+        position: sticky;
+        background-color: #fff;
+      }
+
+      .table-body tr:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+// Combine media queries to reduce redundancy
+@media screen and (max-width: 768px) {
+  .add_quote_drawer {
+    .MuiDrawer-paper {
+      width: 40vw !important;
+
+      @media screen and (max-width: 425px) {
+        width: 60vw !important;
+      }
+
+      @media screen and (max-width: 375px) {
+        width: 70vw !important;
+      }
+
+      @media screen and (max-width: 320px) {
+        width: 75vw !important;
+      }
+    }
+  }
+}

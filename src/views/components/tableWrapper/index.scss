@@ -1,0 +1,53 @@
+.table_mui {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  .table-body {
+    position: relative;
+
+    .head-cell,
+    .body-cell {
+      color: rgba(0, 0, 0, 0.87);
+      white-space: nowrap;
+      min-width: 100px;
+      max-width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      * {
+        white-space: inherit;
+        overflow: inherit;
+        text-overflow: inherit;
+      }
+    }
+
+    .head-cell {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .body-cell {
+      font-size: 12px;
+      font-weight: 400;
+      padding: 10px 16px;
+    }
+
+    .table_body_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: black;
+      text-align: center;
+    }
+
+    .border-less-cell {
+      border: none;
+    }
+
+    .d-none {
+      display: none;
+    }
+  }
+}
